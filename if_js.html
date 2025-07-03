@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"> </script>
+    <script>
+        function funcao1() {
+            var x;
+            var r=confirm("Escolha um valoe!");
+            if (r==true) {x="você pressionou Ok!"; }
+            else {x="você pressionou Cancelar!";}
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</head>
+<body>
+    <p>Clique no botão para exibir a caixa de configuração.</p>
+    <button onclick="funcao1()">Clique aqui</button>
+    <p id="demo"></p>    
+</body>
+</html>

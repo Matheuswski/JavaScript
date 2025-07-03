@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"> </script>
+    <script>
+        function myFunction(){
+            var x=parseFloat(prompt("Digite o Primeiro numero: "));
+            var y=parseFloat(prompt("Digite o Segundo numero: "));
+            var op = parseInt(prompt("Digite a operação desejada: \n1 - soma \n2 - subtração \n3 - multiplicação \n4 - divisão"));
+                var resultado;
+            if(op == 1){
+                resultado = x+y;
+            }
+
+            if(op == 2){
+                resultado = x-y;
+            }
+
+            if(op == 3){
+                resultado = x*y;
+            }
+
+            if(op == 4){
+                resultado = x/y;
+            }
+    document.getElementById("demo").innerHTML = "Resultado: " + resultado;
+
+    }
+
+               
+    </script>
+</head>
+<body>
+    <p>Clique para exibir.</p>
+    <button onclick="myFunction()">Clique aqui</button>
+    <p id="demo"></p>
+</body>
+</html>
