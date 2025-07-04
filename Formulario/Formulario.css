@@ -1,0 +1,16 @@
+body {
+    background-color:crimson;
+    text-align: center;
+    font-size: 18px;
+    font-weight:normal;    
+
+}
+
+form {
+    background-color:salmon;
+    text-align: left;
+    font-family: 'Arial Narrow';
+    font-size: 18px;
+    font-weight:normal;
+    border-bottom-color: gray; 
+}
