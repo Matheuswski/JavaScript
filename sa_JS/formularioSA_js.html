@@ -8,7 +8,7 @@
     <title>Formulario de Saúde</title>
     <!--ESCREVA O CSS ou UTILIZE BOOTSTRAP NO CODIGO ABAIXO-->
     <link rel="stylesheet" type="text/css" href="Formulario.css" media="all">
-    <script src="Formulario.js"></script>
+    <script src="Formulario2.js"></script>
 
 </head>
 <body>
@@ -16,21 +16,21 @@
         <!--DADOS PESSOAIS-->
         <fieldset>
             <div>
-                <center><h3>Iserir dados dos Pacientes</h3></center>
+                <center><h3>Iserir dados do fornecedor</h3></center>
             </div>
             <div id="linha">
                 <hr>
             </div>
             <br>
             <div id="autor">
-                <center><h2>Aluno Matheus Golanowski</h2></center>
+                <center><h2>Formulario de Fornecedor</h2></center>
             </div>
             
             <center><table border="0" cellspacing="5">
                 <!--Nome-->
                 <tr>
                     <td align="right">
-                        <label for="nome">Nome:</label>
+                        <label for="nomeEmpresa">Nome Empresarial:</label>
                     </td>
                     <td>
                         <input class="tamanho" type="text" name="nome" size="15" required>
@@ -40,104 +40,30 @@
                 <!--POSTO DE SAUDE-->
                 <tr>
                     <td align="right">
-                        <label for="posto de saude">Posto De Saúde:</label>
+                        <label for="nomeFantasia">Nome Fantasia:</label>
                     </td>
                     <td>
-                        <input class="tamanho2" type="text" name="posto" size="15" maxlength="15">
-                    </td>
-                </tr>
-
-                <!--DIABETES-->
-                <tr>
-                    <td align="right">
-                        <label for="tipodiabet">Tipo Diabet:</label>
-                    </td>
-                    <td >
-                        <input class="tamanho" type="text" name="diabet" required>
-                    </td>
-                </tr>
-
-                <!--CARTAO SUS-->
-                <tr>
-                    <td align="right">
-                        <label for="cartaossus">Cartão SUS:</label>
-                    </td>
-                    <td>
-                        <input type="text" required onkeypress="mascara(this, CartaoSus)" maxlength="15">
-                    </td>
-                </tr>
-
-                <!--ANO INICIO DA DIABET-->
-                <tr>
-                    <td align="right">
-                        <label for="anodiabet">Ano De Inicio Da Diabet:</label>
-                    </td>
-                    <td>
-                        <input type="text" required onkeypress="mascara(this, data)" maxlength="14">
-                    </td>
-                </tr>
-
-                <!--DATA DE NACIMENTO-->
-                <tr>
-                    <td align="right">
-                        <label for="dtnacimento">Data de Nacimento:</label>
-                    </td>
-                    <td>
-                        <label for="">
-                            <input type="text" required onkeypress="mascara(this, data)" maxlength="10"> (DD/MM/AAAA)
-                        </label>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-
-                <!--SEXO-->
-                <tr>
-                    <td align="right">
-                        <label for="sexo">Sexo:</label>
-                    </td>
-                    <td>
-                        <input type="radio" value="" name="sexo" required>Masc.
-                        <input type="radio" value="" name="sexo" required>Fem.
+                        <input class="tamanho2" type="text" name="fantasia" size="15" maxlength="15">
                     </td>
                 </tr>
 
                 <!--RG e SSP-->
                 <tr>
                     <td align="right">
-                        <label for="rg">RG:</label>
+                        <label for="cnpj">Cnpj da Empresa:</label>
                     </td>
                     <td>
-                        <input type="text" required onkeypress="mascara(this, RGeCPF)" maxlength="14">
+                        <input type="text" required onkeypress="mascara(this, cnpjEmpre)" maxlength="14">
                     </td>
 
-                    <td align="right">SSP:
-                        <select id="estado" name="estado" class="estados">
-                            <option value="RS">RS</option>
-                            <option value="SC">SC</option>
-                            <option value="PR">PR</option>
-                            <option value="SP">SP</option>
-                        </select>
-                    </td>
-                </tr>
                 
                 <!--TELEFONE-->
                 <tr>
                     <td align="right">
-                        <label for="telefone">Telefone:</label>
+                        <label for="telefone">Telefone Empresarial:</label>
                     </td>
                     <td>
                         <input type="text" onkeypress="mascara(this, Telefone)" maxlength="12">
-                    </td>
-                </tr>
-
-                <!--PROFISSAO-->
-                <tr>
-                    <td align="right">
-                        <label for="profissao">Profição:</label>
-                    </td>
-                    <td>
-                        <input class="tamanho" type="text" name="profissao">
                     </td>
                 </tr>
 
@@ -188,16 +114,6 @@
                             <option value="SP">SP</option>              
                         </select>
                     </td>
-                    </td>
-                </tr>
-
-                <!--PAÍS-->
-                <tr>
-                    <td align="right">
-                        <label for="pais">País:</label>
-                    </td>
-                    <td>
-                        <input class="tamanho2" type="text" name="pais" id="" value="Brasil" required>
                     </td>
                 </tr>
                 <br>
