@@ -10,6 +10,10 @@ function executaMascara(){
     objeto.value=funcao(objeto.value)
 }
 
+function mesclarApenasLetras(texto) {
+    return texto.replace(/[^a-zA-Z]/g, "");
+  }
+
 //mascaras
 //telefone
 function Telefone(variavel){

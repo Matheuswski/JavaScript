@@ -1,7 +1,7 @@
 
 table{
     color:whitesmoke;
-    background-color:rgb(31, 31, 179);
+    background-color:rgb(100, 100, 185);
     text-align: center;
     font-family: 'Arial Narrow';
     font-size: 18pt;
@@ -10,8 +10,8 @@ table{
 
 
 body{
-    color:grey;
-    background-color:darkblue;
+    color:black;
+    background-color:rgb(100, 100, 185);
     text-align: center;
     font-family: 'Arial Narrow';
     font-size: 15pt;

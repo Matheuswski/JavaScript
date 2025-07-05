@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Saúde</title>
     <!--ESCREVA O CSS ou UTILIZE BOOTSTRAP NO CODIGO ABAIXO-->
-    <link rel="stylesheet" type="text/css" href="Formulario.css" media="all">
+    <link rel="stylesheet" type="text/css" href="SA.css" media="all">
     <script src="Formulario2.js"></script>
+
 
 </head>
 <body>
@@ -33,7 +34,7 @@
                         <label for="nomeEmpresa">Nome Empresarial:</label>
                     </td>
                     <td>
-                        <input class="tamanho" type="text" name="nome" size="15" required>
+                        <input type="text" required onkeypress="mascara(this, mesclarApenasLetras2)" maxlength="14">
                     </td>
                 </tr>
 
@@ -43,7 +44,7 @@
                         <label for="nomeFantasia">Nome Fantasia:</label>
                     </td>
                     <td>
-                        <input class="tamanho2" type="text" name="fantasia" size="15" maxlength="15">
+                        <input type="text" required onkeypress="mascara(this, mesclarApenasLetras)" maxlength="14">
                     </td>
                 </tr>
 

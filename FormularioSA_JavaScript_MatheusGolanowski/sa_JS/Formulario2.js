@@ -10,6 +10,15 @@ function executaMascara(){
     objeto.value=funcao(objeto.value)
 }
 
+function mesclarApenasLetras(texto) {
+    return texto.replace(/[^a-zA-Z]/g, "");
+  }
+
+  function mesclarApenasLetras2(texto) {
+    return texto.replace(/[^a-zA-ZÀ-ÿ]/g, "");
+  }
+  
+
 //mascaras
 //telefone
 function Telefone(variavel){
@@ -19,14 +28,13 @@ function Telefone(variavel){
     return variavel
 }
 
-//RGeCPF
-function RGeCPF(variavel){
-    variavel=variavel.replace(/\D/,"")//remove caracteres não numericos
-    variavel=variavel.replace(/(\d{3})(\d)/,"$1.$2") // ADICIONA PONTO ENTRE O TERCEIRO E O QUARTO
-    variavel=variavel.replace(/(\d{3})(\d)/,"$1.$2") // ADICIONA PONTO ENTRE O SEXTO E O SETIMO
-    variavel=variavel.replace(/(\d{3})(\d{1,2})$/,"$1-$2") // ADICIONA PONTO ENTRE O NONO E OS DOIS ULTIMOS
+//CNPJ
+function cnpjEmpre(variavel) {
+    variavel = variavel.replace(/\D/g, ''); // Remove caracteres não numéricos
+    variavel = variavel.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/,"$1.$2.$3/$4-$5");
     return variavel
-}
+  }
+
 
 //CEP
 function cep(variavel){
@@ -36,9 +44,4 @@ function cep(variavel){
     return variavel
 }
 
-//Sus
-function CartaoSus(variavel){
-    variavel=variavel.replace(/\D/,"")//remove caracteres não numericos
-    variavel=variavel.replace(/(\d{6})(\d{3})$/,"$1-$2") // ADICIONA PONTO ENTRE O SEXTO E O SETIMO
-    return variavel
-}
+
